@@ -11,6 +11,7 @@ var package = require('../package.json');
 var router = express.Router();
 
 // (1)メモ一覧の表示(ページ表示)
+//「GET /」リクエストに対する処理
 router.get('/', function(req, res) {
   memo.list(function(err, list) {
     res.render('index', { version : package.version, list : list });
