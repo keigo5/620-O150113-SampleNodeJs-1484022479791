@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: 620-O150113-SampleNodeJs
+  host: 620-O150113-SampleNodeJs
+  disk_quota: 1024M
